@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-color: #2e2e2e;
+  margin: 0 auto; }
+  @media (min-width: 600px) {
+    body {
+      background-color: rgba(0, 0, 0, 0.25); } }
+
+header {
+  width: 100%;
+  background: url("../images/ademir2.jpg") no-repeat center center;
+  background-position: cover; }
+  header .origin {
+    height: 145px;
+    width: 100%;
+    padding-top: 23px; }
+    @media (min-width: 600px) {
+      header .origin {
+        padding-top: 15px; } }
+
+h1 {
+  font-size: 29px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: white;
+  padding-top: 5px; }
+  h1 span {
+    color: white;
+    font-size: 18px; }
+  h1 .skunks {
+    color: white;
+    font-size: 29px; }
+  @media (min-width: 600px) {
+    h1 {
+      padding-top: 0px;
+      font-size: 28px; } }
+
+h3 {
+  display: none; }
+
+.logos {
+  width: 100%;
+  text-align: center; }
+  .logos img.logo {
+    width: 29%;
+    padding-bottom: 55px; }
+  .logos img.logo2 {
+    width: 20%;
+    padding: 0px 5px 80px 0px; }
+  .logos img.logo3 {
+    width: 15%;
+    padding-bottom: 65px; }
+  @media (min-width: 600px) {
+    .logos {
+      width: 55%;
+      padding-left: 135px;
+      padding-top: 5px; } }
+
+.intro {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/evair1.jpg") fixed no-repeat center center;
+  background-size: cover;
+  height: 720px;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+  @media (min-width: 600px) {
+    .intro {
+      background-color: white; } }
+  .intro .introtext {
+    color: green;
+    text-align: center;
+    line-height: 2.35rem;
+    font-family: "Open Sans", sans-serif; }
+
+.fixed-header {
+  position: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/bomb2.jpg") no-repeat center center;
+  background-position: cover;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 145px; }
+  .fixed-header h3 {
+    display: block;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: yellow;
+    padding-bottom: 2px; }
+
+.matches {
+  background: url("../images/bomb2.jpg") fixed no-repeat center center;
+  padding-top: 10px; }
+
+h2 {
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #124035;
+  padding: 5px; }
+
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0px 10px 0px; }
+  .container li {
+    padding: 5px; }
+
+li img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%; }
+
+a img:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s; }
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flash {
+  0% {
+    opacity: .4; }
+  100% {
+    opacity: 1; } }
+
+footer {
+  background: url("../images/bomb2.jpg") fixed no-repeat center center;
+  width: 100%;
+  height: 200px; }
+  footer .socialmedia {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px; }
+    footer .socialmedia i {
+      padding-right: 10px;
+      color: #124035; }
+  footer .credits {
+    text-align: center;
+    font-size: 18px;
+    color: #124035;
+    font-family: "Open Sans", sans-serif; }
+  footer .nav {
+    padding: 10px;
+    line-height: 1.70rem; }
+    footer .nav li a {
+      font-size: 20px;
+      color: #124035;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none; }
+    footer .nav li a:hover {
+      color: white; }
+  footer i:hover {
+    color: red; }
+
+.headings {
+  font-family: "Open Sans", sans-serif;
+  color: green;
+  font-size: 20px;
+  padding-top: 5px; }
+
+.subheadings {
+  font-family: "Open Sans", sans-serif;
+  color: red;
+  font-size: 18px;
+  padding-top: 5px; }
+
+.stats {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25rem;
+  padding: 10px;
+  color: green; }
+  .stats span {
+    color: black; }
+
+.video {
+  text-align: center; }
+  .video h5 {
+    font-size: 10px; }
+  .video iframe {
+    width: 90%; }
