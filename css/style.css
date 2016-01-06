@@ -49,15 +49,18 @@ body {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   font-color: #2e2e2e;
-  margin: 0 auto; }
-  @media (min-width: 600px) {
-    body {
-      background-color: rgba(0, 0, 0, 0.25); } }
+  margin: 0 auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url("../images/soccer.jpg") no-repeat center center;
+  background-size: cover; }
 
 header {
   width: 100%;
   background: url("../images/ademir2.jpg") no-repeat center center;
-  background-position: cover; }
+  background-size: cover; }
+  @media (min-width: 1024px) {
+    header {
+      background: url("../images/imagem2610.png") no-repeat center center;
+      background-size: cover; } }
   header .origin {
     height: 145px;
     width: 100%;
@@ -65,23 +68,29 @@ header {
     @media (min-width: 600px) {
       header .origin {
         padding-top: 15px; } }
+    @media (min-width: 1024px) {
+      header .origin {
+        padding-bottom: 10px; } }
 
 h1 {
   font-size: 29px;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  color: white;
+  color: #E8C733;
   padding-top: 5px; }
   h1 span {
-    color: white;
+    color: #E8C733;
     font-size: 18px; }
   h1 .skunks {
-    color: white;
+    color: #E8C733;
     font-size: 29px; }
   @media (min-width: 600px) {
     h1 {
       padding-top: 0px;
       font-size: 28px; } }
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 40px; } }
 
 h3 {
   display: none; }
@@ -103,6 +112,18 @@ h3 {
       width: 55%;
       padding-left: 135px;
       padding-top: 5px; } }
+  @media (min-width: 1024px) {
+    .logos {
+      width: 35%;
+      padding: 0px 0px 0px 340px; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 580px) and (-webkit-min-device-pixel-ratio: 2) {
+  header {
+    background: url("../images/ademir2.jpg") no-repeat center center;
+    background-size: cover; }
+  .logos {
+    width: 85%;
+    padding-left: 1.5rem; } }
 
 .intro {
   display: -webkit-flex;
@@ -118,24 +139,42 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%; }
-  @media (min-width: 600px) {
+  @media (min-width: 1024px) {
     .intro {
-      background-color: white; } }
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../images/ze5.jpg") no-repeat center center;
+      background-size: cover; } }
   .intro .introtext {
-    color: green;
+    color: #E8C733;
     text-align: center;
-    line-height: 2.35rem;
-    font-family: "Open Sans", sans-serif; }
+    line-height: 2rem;
+    font-family: "Open Sans", sans-serif;
+    padding: 0px 5px 0px 5px; }
+    @media (min-width: 600px) {
+      .intro .introtext {
+        line-height: 3.5rem; } }
+    @media (min-width: 1024px) {
+      .intro .introtext {
+        font-size: 1,25rem; } }
 
 .fixed-header {
   position: fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/bomb2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.95)), url("../images/bomb2.jpg") no-repeat center center;
   background-position: cover;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 100;
   height: 145px; }
+  @media (min-width: 1024px) {
+    .fixed-header {
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url("../images/flames2.jpg") no-repeat center center;
+      background-position: cover; } }
+  .fixed-header h1 {
+    color: white; }
+  .fixed-header span {
+    color: white; }
+  .fixed-header .skunks {
+    color: white; }
   .fixed-header h3 {
     display: block;
     font-size: 18px;
@@ -143,10 +182,16 @@ h3 {
     text-align: center;
     color: yellow;
     padding-bottom: 2px; }
+    @media (min-width: 1024px) {
+      .fixed-header h3 {
+        display: none; } }
 
 .matches {
   background: url("../images/bomb2.jpg") fixed no-repeat center center;
   padding-top: 10px; }
+  @media (min-width: 1024px) {
+    .matches {
+      background: url("../images/flames2.jpg") fixed no-repeat center center; } }
 
 h2 {
   font-size: 17px;
@@ -176,8 +221,13 @@ h2 {
 
 li img {
   width: 50%;
-  height: 50%;
-  border-radius: 50%; }
+  height: 80%;
+  border-radius: 80%; }
+  @media (min-width: 1024px) {
+    li img {
+      width: 40%;
+      height: 80%;
+      border-radius: 80%; } }
 
 a img:hover {
   opacity: 1;
@@ -196,10 +246,35 @@ a img:hover {
   100% {
     opacity: 1; } }
 
+.estatisticas {
+  background: url("../images/bomb2.jpg") fixed no-repeat center center;
+  padding: 10px 0px 10px 0px;
+  text-align: center; }
+  @media (min-width: 1024px) {
+    .estatisticas {
+      background: url("../images/flames2.jpg") fixed no-repeat center center; } }
+  .estatisticas img {
+    width: 40%;
+    height: 50%;
+    border-radius: 50%; }
+    @media (min-width: 600px) {
+      .estatisticas img {
+        width: 30%;
+        height: 30%;
+        border-radius: 100%; } }
+    @media (min-width: 1024px) {
+      .estatisticas img {
+        width: 20%;
+        height: 80%;
+        border-radius: 80%; } }
+
 footer {
   background: url("../images/bomb2.jpg") fixed no-repeat center center;
   width: 100%;
-  height: 200px; }
+  height: 225px; }
+  @media (min-width: 1024px) {
+    footer {
+      background: url("../images/flames2.jpg") fixed no-repeat center center; } }
   footer .socialmedia {
     text-align: center;
     font-size: 30px;
@@ -213,8 +288,9 @@ footer {
     color: #124035;
     font-family: "Open Sans", sans-serif; }
   footer .nav {
-    padding: 10px;
-    line-height: 1.70rem; }
+    padding: 20px;
+    line-height: 1.70rem;
+    text-align: center; }
     footer .nav li a {
       font-size: 20px;
       color: #124035;
@@ -225,29 +301,43 @@ footer {
   footer i:hover {
     color: red; }
 
+.specifics {
+  padding: 0.75rem; }
+
 .headings {
   font-family: "Open Sans", sans-serif;
-  color: green;
+  color: white;
   font-size: 20px;
-  padding-top: 5px; }
+  padding-top: 5px;
+  line-height: 1.35rem; }
 
 .subheadings {
   font-family: "Open Sans", sans-serif;
-  color: red;
+  color: #E8C733;
   font-size: 18px;
-  padding-top: 5px; }
+  padding-top: 5px;
+  line-height: 1.25rem; }
 
 .stats {
   font-family: "Open Sans", sans-serif;
   line-height: 1.25rem;
   padding: 10px;
-  color: green; }
-  .stats span {
-    color: black; }
+  color: white; }
 
 .video {
-  text-align: center; }
+  text-align: center;
+  padding: 10px; }
   .video h5 {
-    font-size: 10px; }
+    font-size: 10px;
+    color: white;
+    padding-top: 5px; }
   .video iframe {
-    width: 90%; }
+    width: 100%; }
+
+.final1 {
+  padding: 15px;
+  color: #E8C733; }
+
+.final2 {
+  padding: 15px;
+  color: #E8C733; }

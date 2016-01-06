@@ -10,22 +10,20 @@ body {
   font-family: $body-font-family;
   font-color: $font-color;
   margin: 0 auto;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.35)), url("../images/soccer.jpg")no-repeat center center;
+  background-size: cover;
 
-
-  @include bp(tablet) {
-    background-color: rgba(0,0,0,0.25);
-}
-
-   @include bp(desktop) {
-
-}
 }
 
 
 header{ 
 width: 100%;
 background: url("../images/ademir2.jpg")no-repeat center center;
-background-position: cover;
+background-size: cover;
+@include bp(desktop) {
+background: url("../images/imagem2610.png")no-repeat center center;
+background-size: cover;
+}
 .origin{
   height: 145px;
   width: 100%;
@@ -33,6 +31,9 @@ background-position: cover;
   @include bp(tablet) {
   padding-top: 15px;
 }
+  @include bp(desktop) {
+    padding-bottom: 10px;
+  }
 }
 
 }
@@ -40,14 +41,14 @@ h1 {
   font-size: 29px;
   font-family:'Open Sans', sans-serif;
   text-align: center;
-  color: white;
+  color: #E8C733;
   padding-top: 5px;
 
-span { color: white;
+span { color: #E8C733;
       font-size: 18px;
 }
 
-.skunks { color: white;
+.skunks { color: #E8C733;
           font-size: 29px;
     }
 
@@ -57,6 +58,11 @@ span { color: white;
   font-size: 28px;
 
 }
+
+@include bp(desktop) {
+  font-size: 40px;
+}
+
 }
 
 h3{
@@ -84,8 +90,25 @@ img.logo3{
     padding-left: 135px;
     padding-top: 5px;
 }
+@include bp(desktop) {
+  width: 35%;
+  padding: 0px 0px 0px 340px;
+}
 }
 
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 580px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    header {
+      background: url("../images/ademir2.jpg")no-repeat center center;
+      background-size: cover;
+    }
+    .logos{
+      width: 85%;
+      padding-left: 1.5rem;
+    }
+}
 
 
 .intro{
@@ -97,27 +120,50 @@ img.logo3{
   align-items: center;
   width: 100%;
 
-  @include bp(tablet) {
-    background-color: white;
+  @include bp(desktop) {
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url("../images/ze5.jpg") no-repeat center center;
+  background-size: cover;
   }
 
 .introtext{
-  color: green;
+  color: #E8C733;
   text-align: center;
-  line-height: 2.35rem;
+  line-height: 2rem;
   font-family: $body-font-family;
+  padding: 0px 5px 0px 5px;
+
+  @include bp(tablet) {
+    line-height: 3.5rem;
+}
+@include bp(desktop) {
+  font-size: 1,25rem;
+
+}
 }
 }
 
 .fixed-header{
  position: fixed;
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/bomb2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.95)), url("../images/bomb2.jpg") no-repeat center center;
   background-position: cover;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 100;
   height: 145px;
+  @include bp(desktop) {
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.35)), url("../images/flames2.jpg") no-repeat center center;
+  background-position: cover;
+  }
+  h1{
+    color: white;
+  }
+  span{
+    color: white;
+  }
+  .skunks{
+    color: white;
+  }
   h3{
   display: block;
   font-size: 18px;
@@ -125,16 +171,18 @@ img.logo3{
   text-align: center;
   color: yellow;
   padding-bottom: 2px;
+  @include bp(desktop) {
+    display: none;
 }
-  span{
-    // color: ;
-  }
 }
 
-
+}
 .matches{
   background: url("../images/bomb2.jpg") fixed no-repeat center center;
   padding-top: 10px;
+  @include bp(desktop) {
+  background: url("../images/flames2.jpg") fixed no-repeat center center;
+  }
 }
 
 h2{ font-size: 17px;
@@ -159,10 +207,14 @@ h2{ font-size: 17px;
 
 li img{
   width: 50%;
-  height: 50%;
-  border-radius: 50%;
+  height: 80%;
+  border-radius: 80%;
+  @include bp(desktop) {
+    width:40%;
+    height:80%;
+    border-radius: 80%;
 }
-
+}
 // Hover effects - transition
 a img:hover {
   opacity: 1;
@@ -186,12 +238,42 @@ a img:hover {
   }
 }
 
+//
+
+.estatisticas{
+  background: url("../images/bomb2.jpg") fixed no-repeat center center;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  @include bp(desktop) {
+  background: url("../images/flames2.jpg") fixed no-repeat center center;
+  }
+  img{
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    @include bp(tablet) {
+      width: 30%;
+      height: 30%;
+      border-radius: 100%;
+  }
+   @include bp(desktop) {
+      width: 20%;
+      height: 80%;
+      border-radius: 80%;
+}
+}
+}
+
+
 // Footer
 
 footer{
   background: url("../images/bomb2.jpg") fixed no-repeat center center;
   width: 100%;
-  height: 200px;
+  height: 225px;
+  @include bp(desktop) {
+  background: url("../images/flames2.jpg") fixed no-repeat center center;
+  }
   .socialmedia{
     text-align: center;
     font-size: 30px;
@@ -208,8 +290,9 @@ footer{
     font-family: $body-font-family;
   }
   .nav{
-    padding: 10px;
+    padding: 20px;
     line-height: 1.70rem;
+    text-align: center;
     li a{
       font-size: 20px;
       color: #124035;
@@ -222,36 +305,52 @@ footer{
     }
     i:hover{color: red;}
 }
+// Other pages
+
+.specifics{
+  padding:0.75rem;
+}
 
 .headings{
   font-family:$body-font-family;
-  color: green;
+  color: white;
   font-size: 20px;
   padding-top: 5px;
+  line-height: 1.35rem;
 }
 .subheadings{
   font-family: $body-font-family;
-  color: red;
+  color: #E8C733;
   font-size:18px;
   padding-top: 5px;
+  line-height: 1.25rem;
 }
 
 .stats{
   font-family: $body-font-family;
   line-height: 1.25rem;
   padding: 10px;
-  color: green;
-  span{
-    color: black;
-  }
+  color: white;
 }
 
 .video {
   text-align: center;
+  padding: 10px;
   h5{ font-size: 10px;
+      color: white;
+      padding-top: 5px;
   }
   iframe{
-    width:90%;
+    width:100%;
   }
 }
 
+.final1 {
+  padding: 15px;
+  color: #E8C733;
+}
+
+.final2{
+  padding: 15px;
+  color: #E8C733;
+}
