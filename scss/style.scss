@@ -364,12 +364,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .intro {
       background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/evair1.jpg") fixed no-repeat center center;
       background-size: cover;
-      height: 0px;
+      height: 720px;
+      width: 100%;
     }
-    .container0{
-      background: url("../images/bomb2.jpg") fixed no-repeat center center;
-      background-size: cover;
-    }
+    // .container0{
+    //   background: url("../images/bomb2.jpg") fixed no-repeat center center;
+    //   background-size: cover;
+    // }
     .estatisticas {
       background: url("../images/bomb2.jpg") fixed no-repeat center center;
       background-size: cover;
