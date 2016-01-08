@@ -361,15 +361,17 @@ and (-webkit-min-device-pixel-ratio: 2) {
       padding-left: 1.5rem;
     }
     .intro {
+      background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/evair1.jpg") fixed no-repeat center center;
+      background-size: cover;
       height: 0px;
     }
     .container0{
       background: url("../images/bomb2.jpg") fixed no-repeat center center;
-      background-position: cover;
+      background-size: cover;
     }
     .estatisticas {
       background: url("../images/bomb2.jpg") fixed no-repeat center center;
-      background-position: cover;
+      background-size: cover;
     }
 
     .matches{
