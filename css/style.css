@@ -347,12 +347,20 @@ footer {
   .logos {
     width: 85%;
     padding-left: 1.5rem; }
+  .intro {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/evair1.jpg") fixed no-repeat center center;
+    background-size: cover;
+    height: 0px; }
   .container0 {
-    background: url("../images/bomb2.jpg") fixed no-repeat center center; }
+    background: url("../images/bomb2.jpg") fixed no-repeat center center;
+    background-size: cover; }
+  .estatisticas {
+    background: url("../images/bomb2.jpg") fixed no-repeat center center;
+    background-size: cover; }
   .matches {
     background: url("../images/bomb2.jpg") fixed no-repeat center center;
+    background-size: cover;
     padding-top: 0px; }
-  .intro {
-    background: green; }
   footer {
-    background: url("../images/bomb2.jpg") fixed no-repeat center center; } }
+    background: url("../images/bomb2.jpg") fixed no-repeat center center;
+    background-size: cover; } }
