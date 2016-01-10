@@ -12,27 +12,27 @@ body {
   margin: 0 auto;
 }
 
+// Header 
 
 header{ 
-width: 100%;
-background: url("../images/ademir2.jpg")no-repeat center center;
-background-size: cover;
-@include bp(desktop) {
-background: url("../images/imagem2610.png")no-repeat center center;
-background-size: cover;
-}
-.origin{
-  height: 145px;
   width: 100%;
-  padding-top: 23px;
-  @include bp(tablet) {
-  padding-top: 15px;
-}
+  background: url("../images/ademir2.jpg")no-repeat center center;
+  background-size: cover;
   @include bp(desktop) {
-    padding-bottom: 10px;
+    background: url("../images/imagem2610.png")no-repeat center center;
+    background-size: cover;
   }
+  .origin{
+    height: 145px;
+    width: 100%;
+  // padding-top: 23px;
+  @include bp(tablet) {
+  // padding-top: 15px;
 }
-
+@include bp(desktop) {
+  padding-bottom: 10px;
+}
+}
 }
 h1 {
   font-size: 29px;
@@ -41,25 +41,24 @@ h1 {
   color: #E8C733;
   padding-top: 5px;
 
-span { color: #E8C733;
-      font-size: 18px;
-}
+  span { color: #E8C733;
+    font-size: 18px;
+  }
 
-.skunks { color: #E8C733;
-          font-size: 29px;
-    }
+  .skunks { color: #E8C733;
+    font-size: 29px;
+  }
 
-@include bp(tablet) {
+  @include bp(tablet) {
 
-  padding-top: 0px;
-  font-size: 28px;
+    padding-top: 0px;
+    font-size: 28px;
 
-}
+  }
 
-@include bp(desktop) {
-  font-size: 40px;
-}
-
+  @include bp(desktop) {
+    font-size: 40px;
+  }
 }
 
 h3{
@@ -69,31 +68,31 @@ h3{
 .logos{
   width: 100%;
   text-align: center;
-img.logo {
-  width: 29%;
-  padding-bottom: 55px;
-}
+  img.logo {
+    width: 29%;
+    padding-bottom: 55px;
+  }
 
-img.logo2{
-  width: 20%;
-  padding: 0px 5px 80px 0px;
-}
-img.logo3{
-  width: 15%;
-  padding-bottom: 65px;
-}
-@include bp(tablet) {
+  img.logo2{
+    width: 20%;
+    padding: 0px 5px 80px 0px;
+  }
+  img.logo3{
+    width: 15%;
+    padding-bottom: 65px;
+  }
+  @include bp(tablet) {
     width: 55%;
     padding-left: 135px;
     padding-top: 5px;
-}
-@include bp(desktop) {
-  width: 35%;
-  padding: 0px 0px 0px 340px;
-}
+  }
+  @include bp(desktop) {
+    width: 35%;
+    padding: 0px 0px 0px 380px;
+  }
 }
 
-
+// Intro section
 .intro{
   display: flex;
   background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/evair1.jpg") fixed no-repeat center center;
@@ -105,49 +104,49 @@ img.logo3{
 
   @include bp(desktop) {
     background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url("../images/ze5.jpg") no-repeat center center;
-  background-size: cover;
+    background-size: cover;
   }
 
-.introtext{
-  color: #E8C733;
-  text-align: center;
-  line-height: 2rem;
-  font-family: $body-font-family;
-  padding: 0px 5px 0px 5px;
+  .introtext{
+    color: #E8C733;
+    text-align: center;
+    line-height: 2rem;
+    font-family: $body-font-family;
+    padding: 0px 5px 0px 5px;
 
-  @include bp(tablet) {
-    line-height: 3.5rem;
-}
-@include bp(desktop) {
-  font-size: 1,25rem;
+    @include bp(tablet) {
+      line-height: 3.5rem;
+    }
+    @include bp(desktop) {
+      font-size: 1,25rem;
 
+    }
+  }
 }
-}
-}
-
+// Fixed Header CSS
 .fixed-header{
  position: fixed;
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.95)), url("../images/bomb2.jpg") no-repeat center center;
-  background-position: cover;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  height: 145px;
-  @include bp(desktop) {
+ background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.95)), url("../images/bomb2.jpg") no-repeat center center;
+ background-position: cover;
+ width: 100%;
+ left: 0;
+ top: 0;
+ z-index: 100;
+ height: 145px;
+ @include bp(desktop) {
   background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.35)), url("../images/flames2.jpg") no-repeat center center;
   background-position: cover;
-  }
-  h1{
-    color: white;
-  }
-  span{
-    color: white;
-  }
-  .skunks{
-    color: white;
-  }
-  h3{
+}
+h1{
+  color: white;
+}
+span{
+  color: white;
+}
+.skunks{
+  color: white;
+}
+h3{
   display: block;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
@@ -156,15 +155,16 @@ img.logo3{
   padding-bottom: 2px;
   @include bp(desktop) {
     display: none;
+  }
 }
 }
-
-}
+// Matches/Massacres section
 .matches{
   background: url("../images/bomb2.jpg") fixed no-repeat center center;
   padding-top: 10px;
+  background-size: cover;
   @include bp(desktop) {
-  background: url("../images/flames2.jpg") fixed no-repeat center center;
+    background: url("../images/flames2.jpg") fixed no-repeat center center;
   }
 }
 
@@ -196,7 +196,7 @@ li img{
     width:40%;
     height:80%;
     border-radius: 80%;
-}
+  }
 }
 // Hover effects - transition
 a img:hover {
@@ -221,14 +221,15 @@ a img:hover {
   }
 }
 
-//
+// Statistics
 
 .estatisticas{
   background: url("../images/bomb2.jpg") fixed no-repeat center center;
   padding: 10px 0px 10px 0px;
   text-align: center;
+  background-size: cover;
   @include bp(desktop) {
-  background: url("../images/flames2.jpg") fixed no-repeat center center;
+    background: url("../images/flames2.jpg") fixed no-repeat center center;
   }
   img{
     width: 40%;
@@ -238,13 +239,13 @@ a img:hover {
       width: 30%;
       height: 30%;
       border-radius: 100%;
-  }
-   @include bp(desktop) {
+    }
+    @include bp(desktop) {
       width: 20%;
       height: 80%;
       border-radius: 80%;
-}
-}
+    }
+  }
 }
 
 
@@ -254,8 +255,9 @@ footer{
   background: url("../images/bomb2.jpg") fixed no-repeat center center;
   width: 100%;
   height: 225px;
+  background-size: cover;
   @include bp(desktop) {
-  background: url("../images/flames2.jpg") fixed no-repeat center center;
+    background: url("../images/flames2.jpg") fixed no-repeat center center;
   }
   .socialmedia{
     text-align: center;
@@ -282,13 +284,14 @@ footer{
       font-family: $body-font-family;
       text-decoration: none;
     }
-      li a:hover{
-        color: white;
-      }
+    li a:hover{
+      color: white;
     }
-    i:hover{color: red;}
+  }
+  i:hover{color: red;}
 }
-// Other pages
+
+// Other pages CSS
 
 .specifics{
   padding:0.75rem;
@@ -329,8 +332,8 @@ footer{
   text-align: center;
   padding: 10px;
   h5{ font-size: 10px;
-      color: white;
-      padding-top: 5px;
+    color: white;
+    padding-top: 5px;
   }
   iframe{
     width:100%;
@@ -347,43 +350,39 @@ footer{
   color: #E8C733;
 }
 
-// Iphones
+// Iphones - media queries
 
 @media only screen 
 and (min-device-width: 375px) 
 and (max-device-width: 580px)
 and (-webkit-min-device-pixel-ratio: 2) {
-    header {
-      background: url("../images/ademir2.jpg")no-repeat center center;
-      background-size: cover;
-    }
-    .logos{
-      width: 85%;
-      padding-left: 1.5rem;
-    }
-    .intro {
-      background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/evair1.jpg") fixed no-repeat center center;
-      background-size: cover;
-      height: 720px;
-      width: 100%;
-    }
-    // .container0{
-    //   background: url("../images/bomb2.jpg") fixed no-repeat center center;
-    //   background-size: cover;
-    // }
+
+  header {
+    background: url("../images/ademir2.jpg")no-repeat center center;
+    background-size: cover;
+  }
+  .logos{
+    width: 85%;
+    padding-left: 1.5rem;
+  }
+  .intro {
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/evair1.jpg") fixed no-repeat center center;
+    background-size: cover;
+    height: 720px;
+    width: 100%;
+  }
     .estatisticas {
       background: url("../images/bomb2.jpg") fixed no-repeat center center;
       background-size: cover;
     }
 
     .matches{
-       background: url("../images/bomb2.jpg") fixed no-repeat center center;
-       background-size: cover;
-       padding-top: 0px;
-    }
-    footer{
-      background: url("../images/bomb2.jpg") fixed no-repeat center center;
-      background-size: cover;
-    }
-
+     background: url("../images/bomb2.jpg") fixed no-repeat center center;
+     background-size: cover;
+     padding-top: 0px;
+   }
+   footer{
+    background: url("../images/bomb2.jpg") fixed no-repeat center center;
+    background-size: cover;
+  }
 }
