@@ -87,7 +87,7 @@ h3{
     padding-top: 5px;
   }
   @include bp(desktop) {
-    width: 35%;
+    width: 33%;
     padding: 0px 0px 0px 380px;
   }
 }
@@ -286,18 +286,22 @@ footer{
     text-align: center;
     li a{
       font-size: 20px;
-      color: #124035;
+      color: white;
       font-family: $body-font-family;
       text-decoration: none;
       @include bp(desktop) {
       font-size: 30px;
+      color: #124035;
     }
     }
     li a:hover{
+      color: #085C23;
+      @include bp(desktop) {
       color: white;
+      }
     }
   }
-  i:hover{color: red;}
+  i:hover{color:#124035;}
 }
 
 // Other pages CSS
@@ -357,20 +361,32 @@ footer{
   h5{ font-size: 10px;
     color: white;
     padding-top: 5px;
+    @include bp(desktop) {
+    font-size: 1rem;
+  }
   }
   iframe{
     width:100%;
+    @include bp(desktop) {
+      width: 70%;
+    }
   }
 }
 
 .final1 {
   padding: 15px;
   color: #E8C733;
+  @include bp(desktop) {
+    font-size: 2rem;
+  }
 }
 
 .final2{
   padding: 15px;
   color: #E8C733;
+  @include bp(desktop) {
+    font-size: 2rem;
+  }
 }
 
 // Iphones - media queries
