@@ -115,7 +115,7 @@ h3 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/evair1.jpg") fixed no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/evair1.jpg") fixed no-repeat center center;
   background-size: cover;
   height: 720px;
   -webkit-justify-content: center;
@@ -137,10 +137,11 @@ h3 {
     padding: 0px 5px 0px 5px; }
     @media (min-width: 600px) {
       .intro .introtext {
-        line-height: 3.5rem; } }
+        line-height: 3.0rem;
+        font-size: 1rem; } }
     @media (min-width: 1024px) {
       .intro .introtext {
-        font-size: 1,25rem; } }
+        font-size: 1.25rem; } }
 
 .fixed-header {
   position: fixed;
@@ -259,7 +260,7 @@ a img:hover {
 footer {
   background: url("../images/bomb2.jpg") fixed no-repeat center center;
   width: 100%;
-  height: 225px;
+  height: 250px;
   background-size: cover; }
   @media (min-width: 1024px) {
     footer {
@@ -267,24 +268,31 @@ footer {
   footer .socialmedia {
     text-align: center;
     font-size: 30px;
-    padding: 30px; }
+    padding: 20px; }
+    @media (min-width: 1024px) {
+      footer .socialmedia {
+        font-size: 45px; } }
     footer .socialmedia i {
       padding-right: 10px;
-      color: #124035; }
+      color: white; }
   footer .credits {
     text-align: center;
-    font-size: 18px;
-    color: #124035;
-    font-family: "Open Sans", sans-serif; }
+    font-size: 14px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 20px; }
   footer .nav {
     padding: 20px;
-    line-height: 1.70rem;
+    line-height: 1.45rem;
     text-align: center; }
     footer .nav li a {
       font-size: 20px;
       color: #124035;
       font-family: "Open Sans", sans-serif;
       text-decoration: none; }
+      @media (min-width: 1024px) {
+        footer .nav li a {
+          font-size: 30px; } }
     footer .nav li a:hover {
       color: white; }
   footer i:hover {
@@ -301,13 +309,20 @@ footer {
   font-size: 20px;
   padding-top: 5px;
   line-height: 1.35rem; }
+  @media (min-width: 1024px) {
+    .headings {
+      font-size: 1.5rem; } }
 
 .subheadings {
   font-family: "Open Sans", sans-serif;
   color: #E8C733;
   font-size: 18px;
-  padding-top: 5px;
+  padding-top: 10px;
   line-height: 1.25rem; }
+  @media (min-width: 1024px) {
+    .subheadings {
+      font-size: 1.25rem;
+      line-height: 1.5rem; } }
 
 .hero {
   width: 40%;
@@ -320,6 +335,13 @@ footer {
   line-height: 1.25rem;
   padding: 10px;
   color: white; }
+  @media (min-width: 600px) {
+    .stats {
+      font-size: 1rem; } }
+  @media (min-width: 1024px) {
+    .stats {
+      font-size: 1.25rem;
+      line-height: 1.55rem; } }
 
 .video {
   text-align: center;
@@ -347,7 +369,7 @@ footer {
     width: 85%;
     padding-left: 1.5rem; }
   .intro {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/evair1.jpg") fixed no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/evair1.jpg") fixed no-repeat center center;
     background-size: cover;
     height: 720px;
     width: 100%; }

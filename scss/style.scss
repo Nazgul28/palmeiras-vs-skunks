@@ -95,7 +95,7 @@ h3{
 // Intro section
 .intro{
   display: flex;
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/evair1.jpg") fixed no-repeat center center;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("../images/evair1.jpg") fixed no-repeat center center;
   background-size: cover;
   height: 720px;
   justify-content: center;
@@ -115,10 +115,11 @@ h3{
     padding: 0px 5px 0px 5px;
 
     @include bp(tablet) {
-      line-height: 3.5rem;
+      line-height: 3.0rem;
+      font-size: 1rem;
     }
     @include bp(desktop) {
-      font-size: 1,25rem;
+      font-size: 1.25rem;
 
     }
   }
@@ -254,7 +255,7 @@ a img:hover {
 footer{
   background: url("../images/bomb2.jpg") fixed no-repeat center center;
   width: 100%;
-  height: 225px;
+  height: 250px;
   background-size: cover;
   @include bp(desktop) {
     background: url("../images/flames2.jpg") fixed no-repeat center center;
@@ -262,27 +263,35 @@ footer{
   .socialmedia{
     text-align: center;
     font-size: 30px;
-    padding: 30px;
+    padding: 20px;
+    @include bp(desktop) {
+      font-size: 45px;
+    }
     i{
       padding-right: 10px;
-      color: #124035;
+      color: white;
+      // color: #124035;
     }
   }
   .credits{
     text-align: center;
-    font-size: 18px;
-    color: #124035;
+    font-size: 14px;
+    color: white;
     font-family: $body-font-family;
+    padding-bottom: 20px;
   }
   .nav{
     padding: 20px;
-    line-height: 1.70rem;
+    line-height: 1.45rem;
     text-align: center;
     li a{
       font-size: 20px;
       color: #124035;
       font-family: $body-font-family;
       text-decoration: none;
+      @include bp(desktop) {
+      font-size: 30px;
+    }
     }
     li a:hover{
       color: white;
@@ -305,13 +314,20 @@ footer{
   font-size: 20px;
   padding-top: 5px;
   line-height: 1.35rem;
+  @include bp(desktop) {
+    font-size: 1.5rem;
+  }
 }
 .subheadings{
   font-family: $body-font-family;
   color: #E8C733;
   font-size:18px;
-  padding-top: 5px;
+  padding-top: 10px;
   line-height: 1.25rem;
+  @include bp(desktop) {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
 }
 
 .hero{
@@ -326,6 +342,13 @@ footer{
   line-height: 1.25rem;
   padding: 10px;
   color: white;
+  @include bp(tablet) {
+    font-size: 1rem;
+  }
+  @include bp(desktop) {
+    font-size: 1.25rem;
+    line-height: 1.55rem;
+  }
 }
 
 .video {
@@ -366,7 +389,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding-left: 1.5rem;
   }
   .intro {
-    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/evair1.jpg") fixed no-repeat center center;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("../images/evair1.jpg") fixed no-repeat center center;
     background-size: cover;
     height: 720px;
     width: 100%;
