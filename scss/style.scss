@@ -25,9 +25,7 @@ header{
   .origin{
     height: 145px;
     width: 100%;
-  // padding-top: 23px;
   @include bp(tablet) {
-  // padding-top: 15px;
 }
 @include bp(desktop) {
   padding-bottom: 10px;
